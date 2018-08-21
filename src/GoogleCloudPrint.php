@@ -67,7 +67,8 @@ class GoogleCloudPrint
             'client_id' => $this->authentication->getClientId(),
             'redirect_uri' => $this->redirectUrl,
             'scope' => 'https://www.googleapis.com/auth/cloudprint',
-            'access_type' => 'offline'
+            'access_type' => 'offline',
+            'prompt' => 'consent'
         );
 
         if ($force) {
