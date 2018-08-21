@@ -1,5 +1,5 @@
 {
-  "name": "hanischit/google-cloud-print",
+  "name": "DiegoWtf/google-cloud-print",
   "description": "A API Client to print documents with google cloud print.",
   "type": "library",
   "license": "MIT",
