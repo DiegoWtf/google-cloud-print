@@ -166,7 +166,7 @@ class GoogleCloudPrint
         $response = json_decode($response->getBody());
 
         if ($response->success !== true) {
-            throw new CouldNotSendPrintJobException("Could not send print job: " . $response->errormessage);
+            throw new CouldNotSendPrintJobException("Could not send print job: " . $response->message);
         }
 
         return $response->success;
@@ -201,7 +201,7 @@ class GoogleCloudPrint
         $response = json_decode($response->getBody());
 
         if ($response->success !== true) {
-            throw new CouldNotSendPrintJobException("Could not send print job: " . $response->errormessage);
+            throw new CouldNotSendPrintJobException("Could not send print job: " . $response->message);
         }
 
         return $response->success;
